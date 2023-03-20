@@ -1,16 +1,16 @@
 # libimobiledevice
 
-*A library to communicate with services on iOS devices using native protocols.*
+_A library to communicate with services on iOS devices using native protocols._
+
+[![C/C++ CI](https://github.com/SideStore/libimobiledevice/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/SideStore/libimobiledevice/actions/workflows/c-cpp.yml)
 
 ![Alt](https://repobeats.axiom.co/api/embed/7c7221a770c932ec834ce76a59ac84b3db9143a1.svg "Repobeats analytics image")
 
 ## Features
 
-libimobiledevice is a cross-platform software library that talks the protocols
-to interact with iOS devices.
+libimobiledevice is a cross-platform software library that talks the protocols to interact with iOS devices.
 
-Unlike other projects, it does not depend on using any existing proprietary
-libraries and does not require jailbreaking.
+Unlike other projects, it does not depend on using any existing proprietary libraries and does not require jailbreaking.
 
 Some key features are:
 
@@ -20,7 +20,7 @@ Some key features are:
 - **Utilities**: Provides various command-line utilities for device services
 - **SSL**: Allows choosing between OpenSSL or GnuTLS to handle SSL communication
 - **Network**: Supports network connections with "WiFi sync" enabled devices
-- **Python:** Provides Cython based bindings for Python
+- **Python:** Provides `Cython` based bindings for `Python`
 
 The implemented interfaces of many device service protocols allow applications
 to:
