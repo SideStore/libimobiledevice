@@ -2,6 +2,8 @@
 
 *A library to communicate with services on iOS devices using native protocols.*
 
+![Alt](https://repobeats.axiom.co/api/embed/7c7221a770c932ec834ce76a59ac84b3db9143a1.svg "Repobeats analytics image")
+
 ## Features
 
 libimobiledevice is a cross-platform software library that talks the protocols
@@ -52,7 +54,7 @@ for these devices to the Linux Desktop.
 ### Debian / Ubuntu Linux
 
 First install all required dependencies and build tools:
-```shell
+```bash
 sudo apt-get install \
 	build-essential \
 	checkinstall \
@@ -67,20 +69,23 @@ sudo apt-get install \
 ```
 
 If you want to optionally build the documentation or Python bindings use:
-```shell
+
+```bash
 sudo apt-get install \
 	doxygen \
 	cython
 ```
 
 Then clone the actual project repository:
-```shell
-git clone https://github.com/libimobiledevice/libimobiledevice.git
+
+```bash
+git clone https://github.com/SideStore/libimobiledevice.git
 cd libimobiledevice
 ```
 
 Now you can build and install it:
-```shell
+
+```bash
 ./autogen.sh
 make
 sudo make install
@@ -88,6 +93,7 @@ sudo make install
 
 If you require a custom prefix or other option being passed to `./configure`
 you can pass them directly to `./autogen.sh` like this:
+
 ```bash
 ./autogen.sh --prefix=/opt/local --enable-debug
 make
@@ -96,6 +102,7 @@ sudo make install
 
 By default, OpenSSL will be used. If you prefer GnuTLS, configure with
 `--disable-openssl` like this:
+
 ```bash
 ./autogen.sh --disable-openssl
 ```
@@ -133,7 +140,8 @@ The library bundles the following command-line utilities in the tools directory:
 
 Please consult the usage information or manual pages of each utility for a
 documentation of available command line options and usage examples like this:
-```shell
+
+```bash
 ideviceinfo --help
 man ideviceinfo
 ```
